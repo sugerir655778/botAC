@@ -1,4 +1,4 @@
-const help = (prefix) => {
+const menu = (prefix) => {
 	return `
 
 ╔════════════════════
@@ -108,13 +108,13 @@ const help = (prefix) => {
     
 
 ╔════════════════════
-  FEITO POR *ZEUS*
+  FEITO P0 *WANDERSON*
   DUVIDAS? 👇
   WA.me/5597991632509
 ╚════════════════════`
 }
 
-exports.help = help
+exports.menu = menu
 
 
 
