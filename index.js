@@ -6,7 +6,7 @@ const {
     GroupSettingChange
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
-const { help } = require('./src/help')
+const { menu } = require('./src/menu')
 const { help1 } = require('./src/help1')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const { fetchJson } = require('./lib/fetcher')
@@ -70,7 +70,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo *${mdata.subject}*\nPor favor não seja um ghost❤️`
+				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo *${mdata.subject}*\nPor favor seja ativo ❤️`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -182,7 +182,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nome do bot* : ${me.name}\n*Número do bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Contato de bloqueio total* : ${blocked.length}\n*O bot está ativo em* : ${kyun(uptime)}`
+					teks = `*acrianinho* : ${me.acrianinho}\n*Número do bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Contato de bloqueio total* : ${blocked.length}\n*O bot está ativo em* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
